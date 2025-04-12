@@ -1,3 +1,14 @@
+// Allow all traffic from 192.168.4.24 on WAN
+$config['filter']['rule'][] = array(
+    'type' => 'pass',
+    'interface' => 'wan',
+    'ipprotocol' => 'inet',
+    'protocol' => 'any',
+    'source' => array('address' => '192.168.4.24'),
+    'destination' => array('any' => true),
+    'descr' => 'Allow all from 192.168.4.24 on WAN',
+);
+
 // Deny all inbound traffic on WAN
 $config['filter']['rule'][] = array(
     'type' => 'block',
