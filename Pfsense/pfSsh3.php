@@ -21,7 +21,7 @@ $config['filter']['rule'][] = array(
 );
 
 // === ALLOW RULES ON WAN FOR LAN SCORING SERVICES ===
-$lan_ip = '10.X.1.0/24';
+$lan_ip = '10.10.1.0/24';
 
 // SSH
 $config['filter']['rule'][] = array(
@@ -101,7 +101,7 @@ $config['filter']['rule'][] = array(
 );
 
 // === ALLOW RULES ON WAN FOR DMZ SCORING SERVICES ===
-$dmz_ip = '10.X.2.0/24';
+$dmz_ip = '10.10.2.0/24';
 
 // HTTP
 $config['filter']['rule'][] = array(
